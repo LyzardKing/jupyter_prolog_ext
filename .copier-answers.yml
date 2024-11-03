@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.3.5
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: galileo.sartor@gmail.com
+author_name: Galileo
+has_binder: false
+has_settings: false
+kind: frontend
+labextension_name: jupyterlab_prolog
+project_short_description: A JupyterLab extension.
+python_name: jupyterlab_prolog
+repository: ''
+test: true
+
