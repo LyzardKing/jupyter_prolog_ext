@@ -16,9 +16,16 @@ const extension: JupyterFrontEndPlugin<void> = {
   activate: (app: JupyterFrontEnd, palette: ICommandPalette, notebooks: INotebookTracker) => {
     console.log('JupyterLab extension jupyterlab_prolog is activated!');
 
+    // Check if the button already exists to avoid duplicates
+    const buttonId = 'prolog-retry-button';
+    if (document.getElementById(buttonId)) {
+      console.log('Button already exists, skipping creation.');
+      return;
+    }
     // Create a button widget
     const button = new Widget();
     button.node.textContent = 'Retry';
+    button.id = buttonId;
 
     // Append to JupyterLab's toolbar
     app.shell.add(button, 'top'); // or 'left', 'right', etc. for other locations
@@ -38,9 +45,9 @@ const extension: JupyterFrontEndPlugin<void> = {
       // Execute Python code if the notebook has a kernel
       const kernel = currentWidget.sessionContext.session?.kernel;
       if (!kernel) {
-          console.error('No kernel available for the current notebook.');
-          alert("The notebook has no active kernel.");
-          return;
+        console.error('No kernel available for the current notebook.');
+        alert("The notebook has no active kernel.");
+        return;
       }      // Execute Prolog code
       const code = `jupyter:retry.`;  // Customize your Prolog code here
 
