@@ -1,5 +1,5 @@
 {
-    "name": "jupyterlab_prolog",
+    "name": "jupyterlab-prolog",
     "version": "0.1.0",
     "description": "A JupyterLab extension.",
     "keywords": [
@@ -38,7 +38,7 @@
         "clean": "jlpm clean:lib",
         "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
         "clean:lintcache": "rimraf .eslintcache .stylelintcache",
-        "clean:labextension": "rimraf jupyterlab_prolog/labextension jupyterlab_prolog/_version.py",
+        "clean:labextension": "rimraf jupyterlab-prolog/labextension jupyterlab-prolog/_version.py",
         "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
         "eslint": "jlpm eslint:check --fix",
         "eslint:check": "eslint . --cache --ext .ts,.tsx",
@@ -95,7 +95,7 @@
     },
     "jupyterlab": {
         "extension": true,
-        "outputDir": "jupyterlab_prolog/labextension"
+        "outputDir": "jupyterlab-prolog/labextension"
     },
     "eslintIgnore": [
         "node_modules",

@@ -6,9 +6,9 @@ author_name: Galileo
 has_binder: false
 has_settings: false
 kind: frontend
-labextension_name: jupyterlab_prolog
+labextension_name: jupyterlab-prolog
 project_short_description: A JupyterLab extension.
-python_name: jupyterlab_prolog
+python_name: jupyterlab-prolog
 repository: ''
 test: true
 

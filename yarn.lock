@@ -7198,9 +7198,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jupyterlab_prolog@workspace:.":
+"jupyterlab-prolog@workspace:.":
   version: 0.0.0-use.local
-  resolution: "jupyterlab_prolog@workspace:."
+  resolution: "jupyterlab-prolog@workspace:."
   dependencies:
     "@jupyterlab/application": ^4.0.0
     "@jupyterlab/builder": ^4.0.0
